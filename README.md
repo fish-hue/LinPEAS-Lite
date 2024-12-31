@@ -47,24 +47,24 @@ Optional: View Results by User: After selecting an option, the script will ask i
 
 **Example Output**
 - ****Option 1: Files with Known Credentials**
-- **javascript
-- **Copy code
-- **These files may contain credentials that can be used to escalate privileges:
--/etc/passwd
--/var/log/auth.log
+- javascript
+- Copy code
+- These files may contain credentials that can be used to escalate privileges:
+/etc/passwd
+/var/log/auth.log
 - ****Option 2: Processes Owned by Root**
-- **yaml
-- **Copy code
-- **These processes are owned by root and may be vulnerable to exploitation:
--root       1234  0.0  0.1  23456  6789 ?        Ss   10:00   0:00 /usr/sbin/sshd
--root       5678  0.0  0.1  23456  6789 ?        Ss   10:05   0:00 /usr/sbin/apache2
+- yaml
+- Copy code
+- These processes are owned by root and may be vulnerable to exploitation:
+root       1234  0.0  0.1  23456  6789 ?        Ss   10:00   0:00 /usr/sbin/sshd
+root       5678  0.0  0.1  23456  6789 ?        Ss   10:05   0:00 /usr/sbin/apache2
 - ****Option 3: SUID/SGID Binaries**
-- **bash
-- **Copy code
-- **These binaries have special permissions and may be vulnerable to exploitation:
+- bash
+- Copy code
+- These binaries have special permissions and may be vulnerable to exploitation:
 -rwsr-xr-x 1 root root 23456 /usr/bin/sudo
 -rwsr-xr-x 1 root root 12345 /usr/bin/passwd
-Example User-Specific Results:
+**Example User-Specific Results:**
 yaml
 Copy code
 Results for User: username
