@@ -45,23 +45,23 @@ Select an Option: The script will display a menu. Choose one of the available op
 4: Exit the script.
 Optional: View Results by User: After selecting an option, the script will ask if you want to view results filtered by user. Enter a username to see files, processes, and binaries specific to that user.
 
-Example Output
-Option 1: Files with Known Credentials
-javascript
-Copy code
-These files may contain credentials that can be used to escalate privileges:
-/etc/passwd
-/var/log/auth.log
-Option 2: Processes Owned by Root
-yaml
-Copy code
-These processes are owned by root and may be vulnerable to exploitation:
-root       1234  0.0  0.1  23456  6789 ?        Ss   10:00   0:00 /usr/sbin/sshd
-root       5678  0.0  0.1  23456  6789 ?        Ss   10:05   0:00 /usr/sbin/apache2
-Option 3: SUID/SGID Binaries
-bash
-Copy code
-These binaries have special permissions and may be vulnerable to exploitation:
+**Example Output**
+- ****Option 1: Files with Known Credentials**
+- **javascript
+- **Copy code
+- **These files may contain credentials that can be used to escalate privileges:
+-/etc/passwd
+-/var/log/auth.log
+- ****Option 2: Processes Owned by Root**
+- **yaml
+- **Copy code
+- **These processes are owned by root and may be vulnerable to exploitation:
+-root       1234  0.0  0.1  23456  6789 ?        Ss   10:00   0:00 /usr/sbin/sshd
+-root       5678  0.0  0.1  23456  6789 ?        Ss   10:05   0:00 /usr/sbin/apache2
+- ****Option 3: SUID/SGID Binaries**
+- **bash
+- **Copy code
+- **These binaries have special permissions and may be vulnerable to exploitation:
 -rwsr-xr-x 1 root root 23456 /usr/bin/sudo
 -rwsr-xr-x 1 root root 12345 /usr/bin/passwd
 Example User-Specific Results:
@@ -82,7 +82,7 @@ Security Considerations
 This script is intended for use in controlled environments and for authorized security audits only. Unauthorized access to or modification of system files, processes, or configurations is illegal and unethical. Always ensure you have explicit permission to audit systems before running this or similar scripts.
 
 License
-This script is released for educational purposes only. It is not intended for malicious use. Use this script responsibly and ensure you have proper authorization.
+This script is released for educational purposes only. **It is not intended for malicious use. Use this script responsibly and ensure you have proper authorization.**
 
 Disclaimer
 The script may not work on all systems, as it relies on Unix/Linux-specific commands and directories.
