@@ -35,8 +35,8 @@ The script allows for:
    Run the script on a Linux-based system using bash. Ensure that you have the necessary permissions to access system directories and process information.
 
    ```bash
-   chmod +x system_vulnerability_auditor.sh
-   ./system_vulnerability_auditor.sh
+   chmod +x linpeas-lite.sh
+   ./linpeas-lite.sh
 Select an Option: The script will display a menu. Choose one of the available options:
 
 1: Files with known credentials.
